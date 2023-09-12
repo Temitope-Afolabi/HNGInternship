@@ -1,13 +1,12 @@
 const express = require('express')
 const app = express()
 
+const port = process.env.PORT || 5000
+
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const dateTime = new Date();
 let day = weekday[dateTime.getDay()];
-
-
-
 
 app.get('/api', (req, res) => {
 
@@ -23,6 +22,7 @@ app.get('/api', (req, res) => {
     }
     )
 
+
 })
 
-app.listen(5000, () => { console.log('Server is listening on port 5000...') })
+app.listen(port, () => { console.log(`Server is listening on port ${port} ...`) })
