@@ -10,7 +10,7 @@ const dateTime = new Date();
 
 // const currentDateTime = new Date();
 const currentDateTime = new Date();
-const utcTime = currentDateTime.setMinutes(currentDateTime.getMinutes() - 2)
+const utcTime = currentDateTime.setMinutes(currentDateTime.getMinutes() + 2)
 const utcTimenew = currentDateTime.toISOString().split('.')[0] + 'Z';
 
 console.log(utcTimenew)
