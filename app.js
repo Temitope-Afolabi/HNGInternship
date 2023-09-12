@@ -17,11 +17,12 @@ app.get('/api', (req, res) => {
         'current_day': day,
         'utc_time': dateTime,
         'track': track,
-        'github_file_url': "https://github.com/username/repo/blob/main/file_name.ext",
-        'github_repo_url': "https://github.com/username/repo",
+        'github_file_url': "https://github.com/Temitope-Afolabi/HNGInternship/blob/main/app.js",
+        'github_repo_url': "https://github.com/Temitope-Afolabi/HNGInternship",
         'status_code': 200
     }
     )
+
 })
 
 app.listen(5000, () => { console.log('Server is listening on port 5000...') })
